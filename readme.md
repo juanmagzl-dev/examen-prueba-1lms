@@ -28,9 +28,5 @@
 
 ### Clona el repositorio
 > `git clone https://github.com/juanmagzl-dev/examen-prueba-1lms.git`
-<<<<<<< HEAD
 > cd examen-prueba-1lms
 > code .
-=======
-
->>>>>>> f2e0d2c3b86418eb80d18e5ef865a08556e8cee1
