@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub blog</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="terminal-loader" id="loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div class="text">Loading...</div>
+    </div>
+
+    <header class="hidden">
+        <a href="#"><span>Bienvenido a mi blog❗</span></a>
+
+        <div>
+            <button id="bdark">
+                Modo oscuro
+            </button>
+        </div>
+    </header>
+
+    <main class="hidden">
+        <section>
+            <h1>Aprende a usar GitHub en 4 sencillos pasos</h1>
+            
+            <p style="padding-top: 30px;">
+                GitHub es una plataforma líder en el mundo del desarrollo de software colaborativo. Ofrece a los desarrolladores un entorno centralizado para alojar, revisar y colaborar en proyectos de código abierto y privados. 
+            </p>
+            <p style="padding-top: 10px;">
+                Con su sistema de control de versiones basado en Git, GitHub permite a los equipos de desarrollo gestionar fácilmente cambios en el código, realizar seguimiento de problemas y coordinar el trabajo de manera eficiente.
+            </p>
+            <p style="padding-top: 10px;">
+               <blockquote>
+                GitHub fomenta la colaboración entre desarrolladores y la mejora continua de proyectos mediante su interfaz intuitiva y sus funciones sociales, como la capacidad de seguir a otros desarrolladores y contribuir a proyectos abiertos. 
+               </blockquote> 
+            </p>
+            <p style="padding-top: 10px;">
+                Git es un sistema de control de versiones distribuido ampliamente utilizado en el desarrollo de software. Permite a los desarrolladores rastrear cambios en el código, trabajar en paralelo en diferentes funciones y fusionar fácilmente las contribuciones de varios colaboradores. Con Git, los equipos pueden mantener un historial completo de cambios en el código, lo que facilita la colaboración y la gestión eficiente de proyectos. 
+            </p>
+            <p style="padding-top: 10px;">
+                Además, su estructura descentralizada proporciona flexibilidad y robustez, lo que lo convierte en una herramienta indispensable para el desarrollo de software moderno.
+            </p>
+        </section>
+    </main>
+
+    <dialog id="dialog" style="border-radius: 10px;">
+        <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">TEXTO INFORMATIVO</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique hic sequi sunt assumenda commodi. <br>
+            Dolorum, illum soluta. Recusandae ducimus quaerat nulla natus, tempore illum in! Eligendi provident <br>
+            nesciunt animi eius?
+        </p>
+
+        <p class="ejercicio13"><a href="ejercico13/ejercicio13.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(34, 33, 33); font-weight: bold; font-size: 20px;">➡️MI SITIO WEB💻⬅️</a></p>
+        <button id="ocultar">Cerrar información</button>
+    </dialog>
+
+    <button id="abrir" class="hidden" style="margin-bottom: 150px;">Ver más información</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

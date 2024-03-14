@@ -1,0 +1,345 @@
+body{
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+    /* 0.4s cambio de color fondo */
+    transition: all 0.4s;
+    font-family: monospace;
+}
+
+/* 
+    bienvenido a mi web
+*/
+
+span{
+    margin: 20px auto;
+    display: block;
+    font-family: monospace;
+    border-right: 4px solid;
+    white-space: nowrap;
+    /* caracteres del texto */
+    width: 22ch;
+
+    animation: write 3s steps(22),
+              blink 0.5s infinite step-end alternate;
+
+    overflow: hidden;
+}
+
+@keyframes write {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+
+/* 
+    h1 animation
+*/
+
+h1{
+    /* color: white; */
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    width: 100%;
+    /* sticky !fixed -> no se sobre pone en las imagenes */
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+    /* animación */
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+    z-index: 1;
+}
+
+/* 
+    ANIMACIÓN DEL H1 -> TITULO
+*/
+
+@keyframes enhance-header{
+    to{
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        font-size: 30px;
+        color: black;
+    }
+}
+
+
+/* =========== */
+
+header{
+    background-color: rgb(255, 195, 228);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+header button{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    background: transparent;
+}
+
+header button:hover{
+    background-color: black;
+    color: white;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h1{
+    font-size: 3em;
+}
+
+main .datos{
+    padding-bottom: 30px;
+}
+
+main p{
+    font-size: 2em;
+}
+
+main a{
+    color: rgb(243, 104, 24);
+}
+
+main blockquote{
+    font-size: 1.5em;
+    border-left: solid 15px greenyellow;
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+
+
+/* estilos modo de color */
+body.darkmode{
+    background-color: rgb(32, 32, 44);
+    color: white;
+}
+
+.darkmode header{
+    background-color: rgb(12, 12, 22);
+    color: white;
+}
+
+.darkmode header a{
+    color: white;
+}
+
+.darkmode button{
+    color: white;
+}
+
+.darkmode button:hover{
+    background-color: white;
+    color: black;
+}
+
+.darkmode main a{
+    color: yellowgreen;
+}
+
+.darkmode main blockquote{
+    border-left-color: #c40b0b;
+    background-color: #222;
+}
+
+#abrir{
+    margin-top: 1px;
+    margin-left: 150px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #222;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#abrir:hover{
+    background-color: rgb(12, 12, 22);
+    color: white;
+}
+
+#ocultar{
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #222;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#ocultar:hover{
+    background-color: rgb(12, 12, 22);
+    color: white;
+}
+
+/* scroll-bar */
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: hsl(0, 0%, 12%);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: hsl(0, 0%, 20%);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    header a {
+      font-size: 1.2em;
+    }
+  
+    main h1 {
+      font-size: 2.5em;
+    }
+  
+    main p {
+      font-size: 1em;
+    }
+}
+  
+@media only screen and (max-width: 480px) {
+    header {
+      flex-direction: column; /* Change layout on smaller screens */
+      align-items: flex-start;
+    }
+  
+    main {
+      padding: 10px; /* Add padding on smaller screens */
+    }
+}
+
+/* Estilos para ocultar el contenido antes de cargar */
+main.hidden, header.hidden, #abrir.hidden {
+    display: none;
+}
+
+
+/* 
+    carga loading
+*/
+
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 6.2em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
+  .terminal-loader {
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 12em;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  
+  .terminal-controls {
+    float: right;
+  }
+  
+  .control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+  }
+  
+  .control.close {
+    background-color: #e33;
+  }
+  
+  .control.minimize {
+    background-color: #ee0;
+  }
+  
+  .control.maximize {
+    background-color: #0b0;
+  }
+  
+  .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green; /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        link css
+     -->
+     <link rel="stylesheet" href="style.css">
+
+
+    <title>Login</title>
+</head>
+<body>
+
+
+    <section class="form-login">
+
+        <h3>SUSCRIBETE A NUESTRA WEB</h3>
+
+        <form action="" method="post" title="formulario de registro">
+
+            <!-- usuario -->
+            <label for="nombreComp">Nombre y Apellidos:</label>
+            <input type="text" name="usu" id="usuario" placeholder="nombre completo" class="cont_" required>
+
+            <!-- correo -->
+            <label for="correoElec">Correo electrónico:</label>
+            <input type="email" name="email" id="mail" placeholder="introduce email" class="cont_" required>
+
+            <!-- contraseña -->
+            <label for="contrasenia">Crea una contraseña:</label>
+            <input type="password" name="pass" id="password" placeholder="crea una contraseña" class="cont_" required>
+
+            <!-- confirmar contraseña -->
+            <label for="confirmCont">Confirmar contraseña:</label>
+            <input type="password" name="pass_" id="password_" placeholder="confirma contraseña" class="cont_" required>
+
+            <!-- 
+                mensaje de error si las contraseñas no coinciden 
+             -->
+             <p class="error_mensaje" id="errorMen"></p>
+
+            <!-- 
+                boton para iniciar sesion
+            -->
+            <button class="btn" id="confirmar" title="iniciar sesion"><a href="landing/index.html" target="_blank" rel="noopener noreferrer">Confirmar Registro</a></button>
+
+            <!-- 
+                boton para cerrar sesion
+            -->
+            <button class="btn" id="cancelar" title="cancelar sesion">Cancelar Registro</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- comienzo de javascript para recogida de datos->sessionStorage -->
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
