@@ -2,7 +2,9 @@
 
 > [!IMPORTANT]
 >
-> He subido la aplicación a netlify, enlace para ver todo el proyecto: `juanma-gonzalez-examen-lms.netlify.app`
+> He subido la aplicación a netlify, enlace para ver todo el proyecto: 
+>
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/aa2efb57-eed6-4fec-8e4b-7ee2e500907c/deploy-status)](https://app.netlify.com/sites/juanma-gonzalez-examen-lms/deploys)
 
 ## Login
 ![alt text](IMAGENES-READ/image.png)
