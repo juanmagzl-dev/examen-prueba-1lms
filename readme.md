@@ -3,7 +3,7 @@
 ## Login
 ![alt text](IMAGENES-READ/image.png)
 
-> Login recuperando datos del formulario con javascript
+> Login recuperando datos del formulario con javascript.
 
 ## Landing
 ![alt text](IMAGENES-READ/image-1.png)
@@ -24,3 +24,7 @@
 
 # Examen web
 ![alt text](IMAGENES-READ/image-4.png)
+
+
+### Clona el repositorio
+> `git clone https://github.com/juanmagzl-dev/examen-prueba-1lms.git`
