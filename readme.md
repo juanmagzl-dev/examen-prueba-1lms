@@ -14,10 +14,12 @@
 
 > [!NOTE]
 > Modo claro de la página
+>
 ![alt text](IMAGENES-READ/image-2.png)
 
 > [!NOTE]
 > Modo oscuro de la página
+>
 ![alt text](IMAGENES-READ/image-3.png)
 
 # Examen web
