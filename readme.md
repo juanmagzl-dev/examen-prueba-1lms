@@ -3,6 +3,8 @@
 > [!IMPORTANT]
 >
 > He subido la aplicación a netlify, enlace para ver todo el proyecto: `juanma-gonzalez-examen-lms.netlify.app`
+>
+> También está el enlace subido a vercel.
 
 ## Login
 ![alt text](IMAGENES-READ/image.png)
